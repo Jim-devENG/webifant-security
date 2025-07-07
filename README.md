@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Webifant Security React Site
+
+## Development
+
+- Install dependencies: `npm install`
+- Start dev server: `npm start`
+- Build for production: `npm run build`
+
+## Deploying to cPanel
+
+1. Run `npm run build` to generate the static site in the `build/` folder.
+2. Add the following `.htaccess` file to the `build/` folder to enable React Router (client-side routing):
+
+```
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+```
+
+3. Upload the contents of the `build/` folder (including `.htaccess`) to your cPanel `public_html` directory.
+4. Your site will be live at your domain!
