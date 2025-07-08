@@ -1,95 +1,205 @@
-# Getting Started with Create React App
+# Webifant Security - React Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional cybersecurity company website built with React, featuring a blog system with Firebase integration.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Modern Design**: Inspired by Rapid7 with bold hero sections and professional styling
+- **Responsive Layout**: Mobile-first design with Tailwind CSS
+- **Blog System**: Full-featured blog with Firebase Firestore backend
+- **Admin Panel**: Secure admin interface for managing blog posts
+- **Authentication**: Firebase Auth for secure admin login
+- **Markdown Support**: Rich text editing with markdown support
+- **SEO Optimized**: Meta tags and proper routing structure
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18, React Router v6
+- **Styling**: Tailwind CSS, Framer Motion
+- **Backend**: Firebase (Firestore, Authentication)
+- **Forms**: React Hook Form with Yup validation
+- **Markdown**: React Markdown
+- **Icons**: React Icons
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 16+
+- npm or yarn
+- Firebase account
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# Webifant Security React Site
-
-## Development
-
-- Install dependencies: `npm install`
-- Start dev server: `npm start`
-- Build for production: `npm run build`
-
-## Deploying to cPanel
-
-1. Run `npm run build` to generate the static site in the `build/` folder.
-2. Add the following `.htaccess` file to the `build/` folder to enable React Router (client-side routing):
-
-```
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+```bash
+git clone <your-repo-url>
+cd webinfant-react
 ```
 
-3. Upload the contents of the `build/` folder (including `.htaccess`) to your cPanel `public_html` directory.
-4. Your site will be live at your domain!
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up Firebase:
+
+   - Go to [Firebase Console](https://console.firebase.google.com/)
+   - Create a new project
+   - Enable Firestore Database
+   - Enable Authentication (Email/Password)
+   - Get your Firebase config
+
+4. Configure Firebase:
+   - Open `src/firebase/config.js`
+   - Replace the placeholder config with your actual Firebase project details:
+
+```javascript
+const firebaseConfig = {
+  apiKey: "your-actual-api-key",
+  authDomain: "your-project.firebaseapp.com",
+  projectId: "your-project-id",
+  storageBucket: "your-project.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "your-app-id",
+};
+```
+
+5. Create Admin User:
+
+   - In Firebase Console, go to Authentication
+   - Add a new user with email and password
+   - Use these credentials to login to the admin panel
+
+6. Start the development server:
+
+```bash
+npm start
+```
+
+The app will be available at `http://localhost:3000`
+
+## Project Structure
+
+```
+src/
+├── firebase/           # Firebase configuration and services
+│   ├── config.js      # Firebase app configuration
+│   ├── authService.js # Authentication functions
+│   └── blogService.js # Blog CRUD operations
+├── pages/             # React components
+│   ├── Home.js        # Landing page
+│   ├── Blog.js        # Blog listing page
+│   ├── BlogPost.js    # Individual blog post
+│   ├── Admin.js       # Admin authentication wrapper
+│   ├── AdminLogin.js  # Admin login form
+│   └── AdminDashboard.js # Blog management interface
+├── utils/             # Utility functions
+└── App.js             # Main app component
+```
+
+## Firebase Setup
+
+### Firestore Database Rules
+
+Set up these security rules in your Firestore database:
+
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Blog posts - anyone can read, only authenticated users can write
+    match /blog-posts/{document} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
+```
+
+### Authentication Rules
+
+- Enable Email/Password authentication in Firebase Console
+- Create admin users through the Firebase Console
+- Users can only access admin features if authenticated
+
+## Deployment
+
+### cPanel Deployment
+
+1. Build the project:
+
+```bash
+npm run build
+```
+
+2. Upload the `build` folder contents to your cPanel public_html directory
+
+3. Ensure the `.htaccess` file is in place for React Router support
+
+### Other Deployment Options
+
+- **Vercel**: Connect your GitHub repo for automatic deployments
+- **Netlify**: Drag and drop the build folder
+- **Firebase Hosting**: Use `firebase deploy` command
+
+## Admin Features
+
+- **Login**: Secure authentication with Firebase Auth
+- **Create Posts**: Rich markdown editor for blog posts
+- **Edit Posts**: Update existing blog posts
+- **Delete Posts**: Remove posts with confirmation
+- **Preview**: View posts before publishing
+- **Tags**: Organize posts with tags
+- **Images**: Add featured images to posts
+
+## Blog Features
+
+- **Responsive Design**: Mobile-friendly blog layout
+- **Search**: Search posts by title, excerpt, or author
+- **Tag Filtering**: Filter posts by tags
+- **Markdown Rendering**: Rich content with markdown support
+- **SEO Optimized**: Proper meta tags and structure
+- **Social Sharing**: Ready for social media integration
+
+## Customization
+
+### Styling
+
+- Modify `tailwind.config.js` for theme customization
+- Update colors in `src/index.css` for brand colors
+- Edit component styles in individual `.js` files
+
+### Content
+
+- Update company information in page components
+- Modify hero sections and call-to-actions
+- Add new pages by creating components and updating routes
+
+### Firebase
+
+- Extend `blogService.js` for additional blog features
+- Add user management in `authService.js`
+- Implement file uploads with Firebase Storage
+
+## Security Considerations
+
+- Firebase security rules protect your data
+- Admin authentication prevents unauthorized access
+- Input validation with React Hook Form
+- XSS protection with React Markdown
+
+## Support
+
+For issues or questions:
+
+1. Check Firebase Console for configuration
+2. Verify Firestore rules are set correctly
+3. Ensure admin user exists in Firebase Auth
+4. Check browser console for error messages
+
+## License
+
+This project is licensed under the MIT License.

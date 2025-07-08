@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
 import Legal from "./pages/Legal";
 import Footer from "./pages/Footer";
+import BlogPost from "./pages/BlogPost";
+import Admin from "./pages/Admin";
 
 function Layout( { children } ) {
   return (
@@ -46,9 +48,11 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/legal" element={<Legal />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Layout>
     </Router>
