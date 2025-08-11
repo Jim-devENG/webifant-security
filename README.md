@@ -191,6 +191,11 @@ npm run build
 - Input validation with React Hook Form
 - XSS protection with React Markdown
 
+## Docs
+- API Reference: `docs/API.md`
+- Components Reference: `docs/COMPONENTS.md`
+- Usage Guide: `docs/USAGE.md`
+
 ## Support
 
 For issues or questions:
