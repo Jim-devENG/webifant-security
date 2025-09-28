@@ -1,0 +1,154 @@
+{
+  "images": {
+    "hero": {
+      "hero-bg.jpg": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&h=1080&fit=crop",
+      "hero-image.jpg": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
+    },
+    "about": {
+      "about-image.jpg": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
+      "founder-image.jpg": "/src/assets/images/founder.PNG"
+    },
+    "services": {
+      "cybersecurity-assessments.jpg": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop",
+      "digital-forensics.jpg": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+      "security-management.jpg": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
+      "consulting-training.jpg": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
+      "tailored-solutions.jpg": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop"
+    },
+    "testimonials": {
+      "testimonial-1.jpg": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
+      "testimonial-2.jpg": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      "testimonial-3.jpg": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+      "testimonial-4.jpg": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+    },
+    "blog": {
+      "blog-1.jpg": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop",
+      "blog-2.jpg": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop",
+      "blog-3.jpg": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop"
+    },
+    "team": {
+      "team-member-1.jpg": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+      "team-member-2.jpg": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+    },
+    "logo": {
+      "logo.png": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=60&fit=crop"
+    },
+    "backgrounds": {
+      "stats-bg.jpg": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&h=600&fit=crop",
+      "contact-bg.jpg": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&h=600&fit=crop",
+      "services-bg.jpg": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&h=600&fit=crop"
+    }
+  },
+  "imageMap": {
+    "hero-bg.jpg": {
+      "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&h=1080&fit=crop",
+      "category": "hero",
+      "path": "src/assets/images/hero/hero-bg.jpg"
+    },
+    "hero-image.jpg": {
+      "url": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+      "category": "hero",
+      "path": "src/assets/images/hero/hero-image.jpg"
+    },
+    "about-image.jpg": {
+      "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
+      "category": "about",
+      "path": "src/assets/images/about/about-image.jpg"
+    },
+    "founder-image.jpg": {
+      "url": "/src/assets/images/founder.PNG",
+      "category": "about",
+      "path": "src/assets/images/founder.PNG"
+    },
+    "cybersecurity-assessments.jpg": {
+      "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop",
+      "category": "services",
+      "path": "src/assets/images/services/cybersecurity-assessments.jpg"
+    },
+    "digital-forensics.jpg": {
+      "url": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+      "category": "services",
+      "path": "src/assets/images/services/digital-forensics.jpg"
+    },
+    "security-management.jpg": {
+      "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
+      "category": "services",
+      "path": "src/assets/images/services/security-management.jpg"
+    },
+    "consulting-training.jpg": {
+      "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
+      "category": "services",
+      "path": "src/assets/images/services/consulting-training.jpg"
+    },
+    "tailored-solutions.jpg": {
+      "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
+      "category": "services",
+      "path": "src/assets/images/services/tailored-solutions.jpg"
+    },
+    "testimonial-1.jpg": {
+      "url": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face",
+      "category": "testimonials",
+      "path": "src/assets/images/testimonials/testimonial-1.jpg"
+    },
+    "testimonial-2.jpg": {
+      "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      "category": "testimonials",
+      "path": "src/assets/images/testimonials/testimonial-2.jpg"
+    },
+    "testimonial-3.jpg": {
+      "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+      "category": "testimonials",
+      "path": "src/assets/images/testimonials/testimonial-3.jpg"
+    },
+    "testimonial-4.jpg": {
+      "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+      "category": "testimonials",
+      "path": "src/assets/images/testimonials/testimonial-4.jpg"
+    },
+    "blog-1.jpg": {
+      "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop",
+      "category": "blog",
+      "path": "src/assets/images/blog/blog-1.jpg"
+    },
+    "blog-2.jpg": {
+      "url": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop",
+      "category": "blog",
+      "path": "src/assets/images/blog/blog-2.jpg"
+    },
+    "blog-3.jpg": {
+      "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
+      "category": "blog",
+      "path": "src/assets/images/blog/blog-3.jpg"
+    },
+    "team-member-1.jpg": {
+      "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+      "category": "team",
+      "path": "src/assets/images/team/team-member-1.jpg"
+    },
+    "team-member-2.jpg": {
+      "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+      "category": "team",
+      "path": "src/assets/images/team/team-member-2.jpg"
+    },
+    "logo.png": {
+      "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=200&h=60&fit=crop",
+      "category": "logo",
+      "path": "src/assets/images/logo/logo.png"
+    },
+    "stats-bg.jpg": {
+      "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&h=600&fit=crop",
+      "category": "backgrounds",
+      "path": "src/assets/images/backgrounds/stats-bg.jpg"
+    },
+    "contact-bg.jpg": {
+      "url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&h=600&fit=crop",
+      "category": "backgrounds",
+      "path": "src/assets/images/backgrounds/contact-bg.jpg"
+    },
+    "services-bg.jpg": {
+      "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&h=600&fit=crop",
+      "category": "backgrounds",
+      "path": "src/assets/images/backgrounds/services-bg.jpg"
+    }
+  }
+}

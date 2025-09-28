@@ -2,17 +2,17 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
+import { getFunctions } from 'firebase/functions';
 
-// 🔥 REPLACE THIS WITH YOUR FIREBASE CONFIGURATION
-// Go to Firebase Console → Project Settings → General → Your Apps → Web App
-// Copy the firebaseConfig object and paste it here
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "your-api-key-here",
-    authDomain: "your-project.firebaseapp.com",
-    projectId: "your-project-id",
-    storageBucket: "your-project.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "your-app-id"
+    apiKey: "AIzaSyDhyPMCAytahLYh31WN-2YAG3b2xdLmJ2g",
+    authDomain: "webinfant-455ac.firebaseapp.com",
+    projectId: "webinfant-455ac",
+    storageBucket: "webifant-455ac.firebasestorage.app",
+    messagingSenderId: "357935755631",
+    appId: "1:357935755631:web:c0f3489aa2d82da261f89a",
+    measurementId: "G-MFN9XPZ80L"
 };
 
 // Initialize Firebase
@@ -22,5 +22,6 @@ const app = initializeApp( firebaseConfig );
 export const db = getFirestore( app );
 export const auth = getAuth( app );
 export const storage = getStorage( app );
+export const functions = getFunctions( app );
 
 export default app; 

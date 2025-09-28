@@ -1,10 +1,15 @@
 import React from "react";
 import { FaLock, FaUserShield, FaEnvelope } from "react-icons/fa";
+import Header from './Header';
+import Footer from './Footer';
 
 export default function Legal() {
     return (
         <div className="bg-gray-950 text-white min-h-screen">
-            <section className="py-16 px-4 max-w-3xl mx-auto">
+            {/* Header */}
+            <Header />
+
+            <section className="py-16 px-4 max-w-3xl mx-auto pt-32">
                 <h1 className="text-4xl font-bold text-cyan-400 mb-6 text-center">Legal & Privacy</h1>
                 <div className="bg-gray-900 rounded-lg p-6 shadow-md mb-8">
                     <div className="flex items-center mb-2"><FaLock className="w-6 h-6 text-cyan-400 mr-2" /><h2 className="text-2xl font-semibold text-cyan-300">Privacy Policy</h2></div>
@@ -23,6 +28,9 @@ export default function Legal() {
                     <p className="text-gray-200">For legal inquiries, contact <a href="mailto:info@webifant.com" className="text-cyan-300 hover:underline">info@webifant.com</a>.</p>
                 </div>
             </section>
+
+            {/* Footer */}
+            <Footer />
         </div>
     );
 } 
