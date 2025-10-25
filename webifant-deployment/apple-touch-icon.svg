@@ -1,0 +1,22 @@
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+        <rect width="180" height="180" fill="#0a0a0a"/>
+        <defs>
+            <clipPath id="shield-180">
+                <path d="M90 36 
+                        Q144 54 144 90
+                        L144 125.99999999999999
+                        Q144 144 125.99999999999999 144
+                        L54 144
+                        Q36 144 36 125.99999999999999
+                        L36 90
+                        Q36 54 90 36
+                        Z"/>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#shield-180)">
+            <!-- Left half - bright cyan-blue -->
+            <rect x="0" y="0" width="90" height="180" fill="#00bcd4"/>
+            <!-- Right half - darker blue -->
+            <rect x="90" y="0" width="90" height="180" fill="#1976d2"/>
+        </g>
+    </svg>

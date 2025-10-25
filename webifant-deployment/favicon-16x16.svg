@@ -1,0 +1,22 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <rect width="16" height="16" fill="#0a0a0a"/>
+        <defs>
+            <clipPath id="shield-16">
+                <path d="M8 3.2 
+                        Q12.8 4.8 12.8 8
+                        L12.8 11.2
+                        Q12.8 12.8 11.2 12.8
+                        L4.8 12.8
+                        Q3.2 12.8 3.2 11.2
+                        L3.2 8
+                        Q3.2 4.8 8 3.2
+                        Z"/>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#shield-16)">
+            <!-- Left half - bright cyan-blue -->
+            <rect x="0" y="0" width="8" height="16" fill="#00bcd4"/>
+            <!-- Right half - darker blue -->
+            <rect x="8" y="0" width="8" height="16" fill="#1976d2"/>
+        </g>
+    </svg>
